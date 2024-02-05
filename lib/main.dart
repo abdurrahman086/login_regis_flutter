@@ -138,6 +138,45 @@ class LoginPage extends StatelessWidget {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    width: double.infinity,
+                    height: 45,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: buttonColor,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Login",
+                        style: whiteTextStyle.copyWith(fontSize: 14),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Don't have an account?",
+                        style: blackTextStyle.copyWith(fontSize: 12),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "Sign Up",
+                        style: buttonTextStyle.copyWith(fontSize: 12),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
                 ],
               ),
             ],
