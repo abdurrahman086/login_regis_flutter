@@ -15,13 +15,13 @@ class RegisPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Login Page',
+                'Register Page',
                 style: blackTextStyle.copyWith(
                     fontSize: 30, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 11),
               Text(
-                "ini merupakan halaman login dari project pertama flutter yang saya buat melalui tutorial youtube",
+                "Ini merupakan halaman register AbdurDEV",
                 style: secondaryTextStyle.copyWith(fontSize: 12),
                 textAlign: TextAlign.center,
               ),
@@ -32,7 +32,7 @@ class RegisPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Login",
+                    "Nama",
                     style: blackTextStyle.copyWith(
                         fontSize: 15, fontWeight: FontWeight.bold),
                   ),
@@ -48,7 +48,7 @@ class RegisPage extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: 'example@gmail.com',
+                        hintText: 'Contoh : Andika',
                         hintStyle: blackTextStyle.copyWith(
                           fontSize: 12,
                           color: textColor.withOpacity(0.6),
@@ -64,9 +64,11 @@ class RegisPage extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Password",
-                          style: blackTextStyle.copyWith(
-                              fontSize: 15, fontWeight: FontWeight.bold)),
+                      Text(
+                        "Email",
+                        style: blackTextStyle.copyWith(
+                            fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
                       SizedBox(
                         height: 11,
                       ),
@@ -79,89 +81,122 @@ class RegisPage extends StatelessWidget {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'password',
+                            hintText: 'example@gmail.com',
                             hintStyle: blackTextStyle.copyWith(
                               fontSize: 12,
                               color: textColor.withOpacity(0.6),
                             ),
                             contentPadding: EdgeInsets.symmetric(
                                 horizontal: 16, vertical: 17),
-                            suffixIcon: Icon(Icons.visibility_off),
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: [
-                      Row(
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          Text("Password",
+                              style: blackTextStyle.copyWith(
+                                  fontSize: 15, fontWeight: FontWeight.bold)),
+                          SizedBox(
+                            height: 11,
+                          ),
                           Container(
-                            width: 24,
-                            height: 24,
+                            width: double.infinity,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
                             ),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: 'password',
+                                hintStyle: blackTextStyle.copyWith(
+                                  fontSize: 12,
+                                  color: textColor.withOpacity(0.6),
+                                ),
+                                contentPadding: EdgeInsets.symmetric(
+                                    horizontal: 16, vertical: 17),
+                                suffixIcon: Icon(Icons.visibility_off),
+                              ),
+                            ),
                           ),
-                          SizedBox(
-                            width: 15,
-                          ),
-                          Text(
-                            "remember me",
-                            style: rememberTextStyle.copyWith(fontSize: 12),
-                          )
                         ],
                       ),
-                      Spacer(),
-                      Text(
-                        "Forgot Password?",
-                        style: blackTextStyle.copyWith(fontSize: 12),
+                      SizedBox(
+                        height: 20,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Container(
-                    width: double.infinity,
-                    height: 45,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: buttonColor,
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Login",
-                        style: whiteTextStyle.copyWith(fontSize: 14),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Don't have an account?",
-                        style: blackTextStyle.copyWith(fontSize: 12),
+                      Row(
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                width: 24,
+                                height: 24,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                "remember me",
+                                style: rememberTextStyle.copyWith(fontSize: 12),
+                              )
+                            ],
+                          ),
+                          Spacer(),
+                          Text(
+                            "Forgot Password?",
+                            style: blackTextStyle.copyWith(fontSize: 12),
+                          ),
+                        ],
                       ),
                       SizedBox(
-                        width: 5,
+                        height: 20,
                       ),
-                      Text(
-                        "Sign Up",
-                        style: blackTextStyle.copyWith(
-                            fontSize: 12, fontWeight: FontWeight.bold),
+                      Container(
+                        width: double.infinity,
+                        height: 45,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: buttonColor,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Register",
+                            style: whiteTextStyle.copyWith(fontSize: 14),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Have an account?",
+                            style: blackTextStyle.copyWith(fontSize: 12),
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "Sign In",
+                            style: blackTextStyle.copyWith(
+                                fontSize: 12, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                     ],
-                  ),
-                  SizedBox(
-                    height: 20,
                   ),
                 ],
               ),
