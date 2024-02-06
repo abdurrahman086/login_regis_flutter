@@ -21,7 +21,7 @@ class LoginPage extends StatelessWidget {
               ),
               SizedBox(height: 11),
               Text(
-                "ini merupakan halaman login dari project pertama flutter yang saya buat melalui tutorial youtube",
+                "Ini merupakan halaman login AbdurDEV",
                 style: secondaryTextStyle.copyWith(fontSize: 12),
                 textAlign: TextAlign.center,
               ),
