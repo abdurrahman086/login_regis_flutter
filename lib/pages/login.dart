@@ -1,5 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:login_regis/pages/constants.dart';
+import 'package:login_regis/pages/regis.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -153,11 +155,18 @@ class LoginPage extends StatelessWidget {
                       SizedBox(
                         width: 5,
                       ),
-                      Text(
-                        "Sign Up",
-                        style: blackTextStyle.copyWith(
-                            fontSize: 12, fontWeight: FontWeight.bold),
-                      ),
+                      RichText(
+                          text: TextSpan(
+                              style: blackTextStyle.copyWith(
+                                  fontSize: 12, fontWeight: FontWeight.bold),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => RegisPage()));
+                                },
+                              text: "Sign Up")),
                     ],
                   ),
                   SizedBox(
